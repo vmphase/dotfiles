@@ -1,0 +1,85 @@
+/* ---------- Hide by link target ---------- */
+a[href="/quest-home"],
+a[href="/store"],
+a[href="/shop"] {
+    display: none !important;
+}
+
+/* ---------- Hide by data-list-item-id ---------- */
+a[data-list-item-id*="nitro"],
+a[data-list-item-id*="shop"],
+a[data-list-item-id*="quests"] {
+    display: none !important;
+}
+
+/* ---------- Remove parent <li> (no empty space) ---------- */
+li:has(a[href="/quest-home"]),
+li:has(a[href="/store"]),
+li:has(a[href="/shop"]),
+li:has(a[data-list-item-id*="nitro"]),
+li:has(a[data-list-item-id*="shop"]),
+li:has(a[data-list-item-id*="quests"]) {
+    display: none !important;
+}
+
+/* ---------- Remove wrapper containers ---------- */
+div:has(> li:has(a[href="/quest-home"])),
+div:has(> li:has(a[href="/store"])),
+div:has(> li:has(a[href="/shop"])) {
+    display: none !important;
+}
+
+/* Gift button */
+div[role="button"][aria-label="Send a gift"] {
+    display: none !important;
+}
+
+/* GIF picker */
+div[role="button"][aria-label="Open GIF picker"] {
+    display: none !important;
+}
+
+/* Sticker picker (NOT emoji picker) */
+div[role="button"][aria-label="Open sticker picker"] {
+    display: none !important;
+}
+
+/* Apps button */
+div[role="button"][aria-label="Apps"] {
+    display: none !important;
+}
+
+/* DO NOT touch emoji button */
+div[role="button"][aria-label="Open emoji picker"] {
+    display: flex !important;
+}
+
+/* Inbox button */
+div[role="button"][aria-label="Inbox"] {
+    display: none !important;
+}
+
+/* Help button */
+div[role="button"][aria-label="Help"] {
+    display: none !important;
+}
+
+/* Optional: remove the whole trailing container spacing if empty */
+.trailing_c38106:empty {
+    display: none !important;
+}
+
+
+.searchBar_e6b769 {
+    display: none !important;
+}
+
+/* Hide Discover button by aria-label */
+div[aria-label="Discover"][role="treeitem"] {
+    display: none !important;
+}
+
+/* Remove its list wrapper to prevent spacing */
+.listItemWrapper__91816:has(div[aria-label="Discover"]) {
+    display: none !important;
+}

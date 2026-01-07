@@ -1,0 +1,52 @@
+[
+    {
+        "context": "Workspace",
+        "bindings": {
+            "ctrl-e": "project_panel::ToggleFocus",
+            "ctrl-g": "git_panel::ToggleFocus",
+            "ctrl-shift-c": [
+                "task::Spawn",
+                { "task_name": "Open Windows Terminal Here" },
+            ],
+        },
+        "unbind": {
+            "ctrl-e": "file_finder::Toggle",
+            "ctrl-shift-g": "git_panel::ToggleFocus",
+        },
+    },
+    {
+        "context": "!Terminal",
+        "unbind": {
+            "ctrl-shift-c": "collab_panel::ToggleFocus",
+        },
+    },
+    {
+        "context": "Terminal",
+        "unbind": {
+            "ctrl-e": ["terminal::SendKeystroke", "ctrl-e"],
+            "ctrl-shift-c": "terminal::Copy",
+        },
+    },
+    {
+        "context": "KeymapEditor",
+        "unbind": {
+            "ctrl-e": "zed::OpenKeymapFile",
+        },
+    },
+    {
+        "context": "ThreadsSidebar",
+        "unbind": {
+            "ctrl-g": "agents_sidebar::ToggleThreadHistory",
+        },
+    },
+    {
+        "context": "Editor && mode == full",
+        "bindings": {
+            "shift-home": "go_to_line::Toggle",
+            "ctrl-shift-g": "go_to_line::Toggle",
+        },
+        "unbind": {
+            "ctrl-g": "go_to_line::Toggle",
+        },
+    },
+]

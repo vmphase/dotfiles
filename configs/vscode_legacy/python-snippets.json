@@ -1,0 +1,28 @@
+{
+    "Main sync template": {
+        "prefix": "main-sync",
+        "body": [
+            "def main() -> None:",
+            "    $0",
+            "",
+            "",
+            "if __name__ == \"__main__\":",
+            "    main()"
+        ],
+        "description": "Basic sync main template"
+    },
+    "Main async template": {
+        "prefix": "main-async",
+        "body": [
+            "import asyncio",
+            "",
+            "async def main() -> None:",
+            "    $0",
+            "",
+            "",
+            "if __name__ == \"__main__\":",
+            "    asyncio.run(main())"
+        ],
+        "description": "Basic async main template"
+    }
+}

@@ -1,0 +1,9 @@
+[
+    {
+        "label": "Open Windows Terminal Here",
+        "command": "wt.exe",
+        "args": ["-d", "$ZED_DIRNAME"],
+        "reveal": "never",
+        "hide": "always",
+    },
+]

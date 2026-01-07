@@ -1,0 +1,117 @@
+{
+    "theme": {
+        "mode": "dark",
+        "light": "One Light",
+        "dark": "Catppuccin Mocha - No Italics",
+    },
+    "icon_theme": {
+        "mode": "dark",
+        "light": "Material Icon Theme",
+        "dark": "Material Icon Theme",
+    },
+    "base_keymap": "VSCode",
+    "theme_overrides": {
+        "Catppuccin Mocha - No Italics": {
+            "border": "#00000000",
+            "border.variant": "#00000000",
+            "border.focused": "#00000000",
+            "title_bar.background": "#1e1e2e",
+            "toolbar.background": "#1e1e2e",
+            "status_bar.background": "#1e1e2e",
+            "scrollbar.thumb.background": "#00000000",
+            "scrollbar.thumb.hover_background": "#00000000",
+            "panel.focused_border": "#00000000",
+        },
+    },
+
+    // --- Window / Chrome ---
+    "window_decorations": "client",
+    "title_bar": {
+        "show_onboarding_banner": false,
+        "show_user_picture": false,
+        "show_sign_in": false,
+    },
+    "toolbar": { "breadcrumbs": false, "quick_actions": false },
+    "status_bar": { "experimental.show": false },
+    "tab_bar": { "show": false },
+    "tabs": { "git_status": false },
+    "preview_tabs": { "enabled": false },
+
+    // --- Panels ---
+    "collaboration_panel": { "dock": "left" },
+    "git_panel": {
+        "dock": "left",
+        "status_style": "label_color",
+        "collapse_untracked_diff": false,
+    },
+    "project_panel": {
+        "dock": "left",
+        "hide_hidden": false,
+        "hide_root": true,
+        "hide_gitignore": false,
+        "git_status": false,
+        "auto_fold_dirs": false,
+        "auto_reveal_entries": false,
+        "show_diagnostics": "off",
+        "indent_guides": { "show": "never" },
+    },
+    "outline_panel": { "git_status": false },
+
+    // --- Fonts ---
+    "ui_font_size": 17,
+    "buffer_font_family": "JetBrainsMono Nerd Font",
+    "buffer_font_size": 13,
+
+    // --- Editor ---
+    "tab_size": 4,
+    "cursor_shape": "block",
+    "cursor_blink": false,
+    "cursor_animation": {
+        "enabled": true,
+    },
+    "current_line_highlight": "none",
+    "selection_highlight": false,
+    "mouse_wheel_zoom": true,
+    "multi_cursor_modifier": "cmd_or_ctrl",
+    "show_whitespaces": "none",
+    "semantic_tokens": "off",
+    "colorize_brackets": false,
+    "linked_edits": true,
+    "auto_indent_on_paste": false,
+    "indent_guides": { "enabled": false },
+    "gutter": { "folds": false },
+    "minimap": { "show": "never" },
+    "scrollbar": { "axes": { "horizontal": false, "vertical": false } },
+    "sticky_scroll": { "enabled": false },
+
+    // --- Save / Startup ---
+    "autosave": { "after_delay": { "milliseconds": 1000 } },
+    "format_on_save": "off",
+    "ensure_final_newline_on_save": true,
+    "restore_on_startup": "launchpad",
+
+    // --- Terminal ---
+    "terminal": {
+        "detect_venv": "off",
+        "font_family": "JetBrainsMono Nerd Font",
+        "shell": { "program": "nu" },
+    },
+
+    // --- Git ---
+    "git": {
+        "branch_picker": { "show_author_name": true },
+        "inline_blame": { "show_commit_summary": false },
+    },
+
+    // --- Languages ---
+    "languages": {
+        "Python": { "format_on_save": "off" },
+    },
+
+    // --- Misc / AI / Telemetry ---
+    "disable_ai": true,
+    "show_edit_predictions": false,
+    "auto_update": false,
+    "cli_default_open_behavior": "new_window",
+    "telemetry": { "diagnostics": false, "metrics": false },
+}

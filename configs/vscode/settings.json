@@ -1,0 +1,170 @@
+{
+    // --- APC Extension (Custom UI) ---
+    "apc.electron": {
+        "frame": false,
+        "titleBarStyle": "hidden"
+    },
+
+    "apc.font.family": "JetBrainsMono Nerd Font",
+    "apc.monospace.font.family": "JetBrainsMono Nerd Font",
+
+    // --- Workbench (General UI) ---
+    "breadcrumbs.enabled": false,
+    "material-icon-theme.hidesExplorerArrows": true,
+    "window.commandCenter": false,
+    "window.newWindowProfile": "Default",
+    "window.restoreWindows": "none",
+    "window.title": " ",
+    "window.zoomLevel": 1.5,
+    "window.titleBarStyle": "custom",
+    "workbench.activityBar.location": "bottom",
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "catppuccin.italicKeywords": false,
+    "catppuccin.italicComments": false,
+    "catppuccin.boldKeywords": false,
+    "catppuccin.accentColor": "blue",
+    "workbench.editor.empty.hint": "hidden",
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.showTabs": "single",
+    "workbench.editorAssociations": {
+        "*.db": "sqlite-viewer.option",
+        "*.session": "sqlite-viewer.option",
+        "*.session-journal": "sqlite-viewer.option"
+    },
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.layoutControl.enabled": false,
+    "workbench.navigationControl.enabled": true,
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "workbench.sideBar.location": "right",
+    "workbench.statusBar.visible": false,
+    "workbench.startupEditor": "none",
+    "workbench.tips.enabled": false,
+    "workbench.tree.enableStickyScroll": false,
+    "workbench.tree.indent": 14,
+    "workbench.tree.renderIndentGuides": "none",
+
+    // --- Editor Appearance & Behavior ---
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "editor.codeLensFontFamily": "\"JetBrains Mono\", 'bold', bold",
+    "editor.semanticHighlighting.enabled": false,
+    "editor.cursorBlinking": "expand",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.definitionLinkOpensInPeek": true,
+    "editor.detectIndentation": false,
+    "editor.fontFamily": "'JetBrainsMono Nerd Font'",
+    "editor.fontLigatures": false,
+    "editor.fontSize": 20,
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": false,
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.largeFileOptimizations": false,
+    "editor.lightbulb.enabled": "off",
+    "editor.linkedEditing": true,
+    "editor.matchBrackets": "never",
+    "editor.minimap.enabled": false,
+    "editor.minimap.renderCharacters": false,
+    "editor.mouseWheelZoom": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.occurrencesHighlight": "off",
+    "editor.overviewRulerBorder": false,
+    "editor.renderControlCharacters": false,
+    "editor.renderWhitespace": "none",
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.vertical": "hidden",
+    "editor.showFoldingControls": "never",
+    "editor.stickyScroll.enabled": false,
+    "editor.tabSize": 4,
+    "editor.guides.indentation": false,
+
+    // --- Explorer & File Management ---
+    "explorer.compactFolders": false,
+    "explorer.confirmDelete": true,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.decorations.badges": false,
+    "explorer.decorations.colors": false,
+    "explorer.fileNesting.patterns": {
+        "*.db": "${capture}.${extname}-*",
+        "*.db3": "${capture}.${extname}-*",
+        "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+        "*.jsx": "${capture}.js",
+        "*.s3db": "${capture}.${extname}-*",
+        "*.sdb": "${capture}.${extname}-*",
+        "*.sqlite": "${capture}.${extname}-*",
+        "*.sqlite3": "${capture}.${extname}-*",
+        "*.ts": "${capture}.js",
+        "*.tsx": "${capture}.ts",
+        "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb, bun.lock",
+        "tsconfig.json": "tsconfig.*.json"
+    },
+    "files.autoSave": "afterDelay",
+    "files.insertFinalNewline": true,
+
+    // --- Terminal ---
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "path": "C:\\Program Files\\PowerShell\\7\\pwsh.exe"
+        }
+    },
+
+    // --- Source Control (Git) ---
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.decorations.enabled": false,
+    "git.enableSmartCommit": true,
+    "git.ignoreLimitWarning": true,
+    "git.ignoreMissingGitWarning": true,
+    "git.openRepositoryInParentFolders": "never",
+    "scm.diffDecorations": "none",
+
+    // --- Language Specific Settings ---
+    "python.languageServer": "Pylance",
+    "go.toolsManagement.autoUpdate": true,
+    "ruff.showSyntaxErrors": false,
+    "[dockercompose]": {
+        "editor.autoIndent": "advanced",
+        "editor.defaultFormatter": "redhat.vscode-yaml",
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2
+    },
+    "[github-actions-workflow]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnType": false
+    },
+
+    // --- Color Customizations (Hiding Ruler Elements) ---
+    "workbench.colorCustomizations": {
+        "editor.background": "#1e1e2e",
+        "sideBarSectionHeader.background": "#1e1e2e",
+        "editorGroup.background": "#1e1e2e",
+        "editorGroup.border": "#0000",
+        "editorGroupHeader.border": "#0000",
+        "editorGroupHeader.tabsBorder": "#0000",
+        "editorCursor.background": "#000000",
+        "editorOverviewRuler.addedForeground": "#0000",
+        "editorOverviewRuler.border": "#0000",
+        "editorOverviewRuler.bracketMatchForeground": "#0000",
+        "editorOverviewRuler.deletedForeground": "#0000",
+        "editorOverviewRuler.errorForeground": "#0000",
+        "editorOverviewRuler.findMatchForeground": "#0000",
+        "editorOverviewRuler.infoForeground": "#0000",
+        "editorOverviewRuler.modifiedForeground": "#0000",
+        "editorOverviewRuler.rangeHighlightForeground": "#0000",
+        "editorOverviewRuler.selectionHighlightForeground": "#0000",
+        "editorOverviewRuler.warningForeground": "#0000",
+        "editorOverviewRuler.wordHighlightForeground": "#0000",
+        "editorOverviewRuler.wordHighlightStrongForeground": "#0000",
+        "editorOverviewRuler.background": "#00000000",
+    },
+
+    // --- Miscellaneous ---
+    "chat.commandCenter.enabled": false,
+    "extensions.ignoreRecommendations": true,
+    "redhat.telemetry.enabled": false,
+    "update.mode": "none",
+    "terminal.external.windowsExec": "wt",
+}

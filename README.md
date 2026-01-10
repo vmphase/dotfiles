@@ -140,7 +140,7 @@ oh-my-posh init pwsh --config "path_to_custom_theme.json" | Invoke-Expression
 ```
 
 - [`config/terminal/custom_theme.json`](configs/terminal/custom_theme.json)
-- - [`config/terminal/pwsh_profile.ps1`](configs/terminal/pwsh_profile.ps1)
+- [`config/terminal/pwsh_profile.ps1`](configs/terminal/pwsh_profile.ps1)
 
 </details>
 

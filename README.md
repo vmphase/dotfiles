@@ -105,7 +105,7 @@
 <summary><strong>Terminal</strong></summary><br>
 
 ### Essentials
-- [Windows Terminal](ttps://github.com/microsoft/terminal)
+- [Windows Terminal](https://github.com/microsoft/terminal)
 - [PowerShell](https://learn.microsoft.com/ru-ru/powershell/scripting/install/installing-powershell-on-windows)
 - [JetBrains Mono Font](https://www.jetbrains.com/lp/mono/)
 - [Scoop Manager](https://scoop.sh/)

@@ -35,7 +35,7 @@
     "workbench.layoutControl.enabled": false,
     "workbench.navigationControl.enabled": true,
     "workbench.secondarySideBar.defaultVisibility": "hidden",
-    "workbench.sideBar.location": "right",
+    "workbench.sideBar.location": "left",
     "workbench.statusBar.visible": false,
     "workbench.startupEditor": "none",
     "workbench.tips.enabled": false,

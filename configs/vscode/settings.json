@@ -4,7 +4,6 @@
         "frame": false,
         "titleBarStyle": "hidden"
     },
-
     "apc.font.family": "JetBrainsMono Nerd Font",
     "apc.monospace.font.family": "JetBrainsMono Nerd Font",
 
@@ -35,7 +34,7 @@
     "workbench.layoutControl.enabled": false,
     "workbench.navigationControl.enabled": true,
     "workbench.secondarySideBar.defaultVisibility": "hidden",
-    "workbench.sideBar.location": "left",
+    "workbench.sideBar.location": "right",
     "workbench.statusBar.visible": false,
     "workbench.startupEditor": "none",
     "workbench.tips.enabled": false,
@@ -167,4 +166,11 @@
     "redhat.telemetry.enabled": false,
     "update.mode": "none",
     "terminal.external.windowsExec": "wt",
+    "accessibility.verbosity.inlineCompletions": false,
+    "editor.inlineSuggest.enabled": false,
+    "editor.inlineSuggest.edits.showLongDistanceHint": false,
+    "editor.inlineSuggest.edits.allowCodeShifting": "never",
+    "editor.inlineSuggest.edits.renderSideBySide": "never",
+    "chat.extensionUnification.enabled": false,
+    "python.analysis.aiHoverSummaries": false,
 }

@@ -43,6 +43,7 @@
 | Go                       | Go language support                       |
 | Ruff                     | Python linter for fast code checks        |
 | YAML                     | YAML syntax support and validation        |
+| Even Better TOML         | TOML syntax support with validation       |
 | APC Customize UI ++      | Customize VS Code UI and layout           |
 | Catppuccin (Mocha, Blue) | Color theme with blue accent              |
 | Material Icon Theme      | File/folder icon theme                    |

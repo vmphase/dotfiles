@@ -118,7 +118,7 @@
     "scm.diffDecorations": "none",
 
     // --- Language Specific Settings ---
-    "python.languageServer": "Pylance",
+    "python.languageServer": "Default",
     "go.toolsManagement.autoUpdate": true,
     "ruff.showSyntaxErrors": false,
     "[dockercompose]": {
@@ -161,7 +161,6 @@
     },
 
     // --- Miscellaneous ---
-    "chat.commandCenter.enabled": false,
     "extensions.ignoreRecommendations": true,
     "redhat.telemetry.enabled": false,
     "update.mode": "none",
@@ -172,5 +171,10 @@
     "editor.inlineSuggest.edits.allowCodeShifting": "never",
     "editor.inlineSuggest.edits.renderSideBySide": "never",
     "chat.extensionUnification.enabled": false,
-    "python.analysis.aiHoverSummaries": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "basedpyright.analysis.inlayHints.callArgumentNames": false,
+    "basedpyright.analysis.inlayHints.functionReturnTypes": false,
+    "basedpyright.analysis.inlayHints.genericTypes": false,
+    "basedpyright.analysis.inlayHints.variableTypes": false,
+    "basedpyright.disableTaggedHints": true
 }

@@ -39,7 +39,7 @@
 | ------------------------ | ----------------------------------------- |
 | Python                   | Python language support                   |
 | Python Environments      | Manage Python virtual environments        |
-| Pylance                  | Fast, feature-rich Python language server |
+| BasedPyright             | Fast, feature-rich Python language server |
 | Go                       | Go language support                       |
 | Ruff                     | Python linter for fast code checks        |
 | YAML                     | YAML syntax support and validation        |

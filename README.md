@@ -145,10 +145,6 @@ oh-my-posh init pwsh --config "path_to_custom_theme.json" | Invoke-Expression
 
 </details>
 
-## Credits
-
-- Discord theme based on [midnight-discord](https://github.com/refact0r/midnight-discord) by [refact0r](https://www.refact0r.dev) (*modified for personal use*).
-
 <br>
 
 <p align="center">

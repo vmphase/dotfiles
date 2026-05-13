@@ -72,16 +72,20 @@
         "diagnostics": false,
         "metrics": false,
     },
-    "icon_theme": "Material Icon Theme",
+    "icon_theme": {
+        "mode": "light",
+        "light": "Material Icon Theme",
+        "dark": "Material Icon Theme",
+    },
     "ui_font_size": 17,
     "buffer_font_size": 16.0,
     "theme": {
         "mode": "dark",
         "light": "One Light",
-        "dark": "Catppuccin Macchiato - No Italics",
+        "dark": "Catppuccin Mocha - No Italics",
     },
     "theme_overrides": {
-        "Catppuccin Macchiato - No Italics": {
+        "Catppuccin Mocha - No Italics": {
             "border.focused": "#00000000",
             "panel.focused_border": "#00000000",
         },

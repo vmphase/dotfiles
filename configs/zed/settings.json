@@ -1,0 +1,99 @@
+// Zed settings
+{
+    "restore_on_startup": "launchpad",
+    "cli_default_open_behavior": "new_window",
+    "disable_ai": true,
+    "terminal": {
+        "shell": {
+            "with_arguments": {
+                "title_override": "--nologo",
+                "program": "powershell.exe",
+                "args": [],
+            },
+        },
+        "font_family": "JetBrainsMono Nerd Font",
+    },
+    "project_panel": {
+        "git_status": false,
+        "auto_fold_dirs": false,
+        "show_diagnostics": "off",
+    },
+    "outline_panel": {
+        "git_status": false,
+    },
+    "base_keymap": "VSCode",
+    "preview_tabs": {
+        "enabled": false,
+    },
+    "status_bar": {
+        "experimental.show": false,
+    },
+    "tab_bar": {
+        "show": false,
+    },
+    "tabs": {
+        "git_status": false,
+    },
+    "multi_cursor_modifier": "cmd_or_ctrl",
+    "sticky_scroll": {
+        "enabled": false,
+    },
+    "mouse_wheel_zoom": true,
+    "gutter": {
+        "folds": false,
+    },
+    "minimap": {
+        "show": "never",
+    },
+    "scrollbar": {
+        "axes": {
+            "horizontal": false,
+            "vertical": false,
+        },
+    },
+    "cursor_blink": true,
+    "autosave": {
+        "after_delay": {
+            "milliseconds": 1000,
+        },
+    },
+    "buffer_font_family": "JetBrainsMono Nerd Font",
+    "auto_indent_on_paste": false,
+    "linked_edits": true,
+    "show_whitespaces": "none",
+    "show_edit_predictions": false,
+    "semantic_tokens": "off",
+    "ensure_final_newline_on_save": true,
+    "indent_guides": {
+        "enabled": false,
+    },
+    "tab_size": 4,
+    "telemetry": {
+        "diagnostics": false,
+        "metrics": false,
+    },
+    "icon_theme": "Material Icon Theme",
+    "ui_font_size": 17,
+    "buffer_font_size": 16.0,
+    "theme": {
+        "mode": "dark",
+        "light": "One Light",
+        "dark": "Catppuccin Macchiato - No Italics",
+    },
+    "theme_overrides": {
+        "Catppuccin Macchiato - No Italics": {
+            "border.focused": "#00000000",
+            "panel.focused_border": "#00000000",
+        },
+        "One Light": {
+            "border.focused": "#00000000",
+        },
+    },
+    "current_line_highlight": "none",
+    "selection_highlight": false,
+    "title_bar": {
+        "show_onboarding_banner": false,
+        "show_user_picture": false,
+        "show_sign_in": false,
+    },
+}

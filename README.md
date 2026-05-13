@@ -17,7 +17,7 @@
 - **Cursor**: [Bibata-Modern](https://github.com/ful1e5/Bibata_Cursor/releases/download/v2.0.7/Bibata-Modern-Classic-Windows.zip)
 - **Shell:** [PowerShell](https://learn.microsoft.com/en-us/powershell/) + [OhMyPosh](https://ohmyposh.dev/)
 - **App Launcher**: [Flow Launcher](https://www.flowlauncher.com/)
-- **Text Editor:** [VSCode](https://code.visualstudio.com/)
+- **Text Editor:** [VSCode](https://code.visualstudio.com/) / [Zed](https://zed.dev/)
 - **Browser:** [Firefox](https://www.firefox.com/en/) / [Chromium](https://www.chromium.org/getting-involved/download-chromium/)
 
 ---

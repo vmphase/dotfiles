@@ -1,17 +1,50 @@
-// Zed settings
 {
-    "restore_on_startup": "launchpad",
-    "cli_default_open_behavior": "new_window",
-    "disable_ai": true,
-    "terminal": {
-        "shell": {
-            "with_arguments": {
-                "title_override": "--nologo",
-                "program": "powershell.exe",
-                "args": [],
-            },
+    // --- UI ---
+    "window_decorations": "client",
+    "buffer_font_family": "JetBrainsMono Nerd Font",
+    "ui_font_size": 17,
+    "theme_overrides": {
+        "Catppuccin Mocha - No Italics": {
+            "border": "#00000000",
+            "border.variant": "#00000000",
+            "title_bar.background": "#1e1e2e",
+            "toolbar.background": "#1e1e2e",
+            "status_bar.background": "#1e1e2e",
+            "scrollbar.thumb.background": "#00000000",
+            "scrollbar.thumb.hover_background": "#00000000",
+            "border.focused": "#00000000",
+            "panel.focused_border": "#00000000",
         },
-        "font_family": "JetBrainsMono Nerd Font",
+    },
+
+    // --- Workbench ---
+    "theme": {
+        "mode": "dark",
+        "light": "One Light",
+        "dark": "Catppuccin Mocha - No Italics",
+    },
+    "icon_theme": {
+        "mode": "light",
+        "light": "Material Icon Theme",
+        "dark": "Material Icon Theme",
+    },
+    "title_bar": {
+        "show_onboarding_banner": false,
+        "show_user_picture": false,
+        "show_sign_in": false,
+    },
+    "toolbar": {
+        "breadcrumbs": false,
+        "quick_actions": false,
+    },
+    "status_bar": {
+        "experimental.show": false,
+    },
+    "tab_bar": {
+        "show": false,
+    },
+    "preview_tabs": {
+        "enabled": false,
     },
     "project_panel": {
         "git_status": false,
@@ -24,24 +57,22 @@
     "outline_panel": {
         "git_status": false,
     },
-    "base_keymap": "VSCode",
-    "preview_tabs": {
-        "enabled": false,
-    },
-    "status_bar": {
-        "experimental.show": false,
-    },
-    "tab_bar": {
-        "show": false,
-    },
-    "tabs": {
-        "git_status": false,
-    },
-    "multi_cursor_modifier": "cmd_or_ctrl",
-    "sticky_scroll": {
-        "enabled": false,
-    },
+
+    // --- Editor Appearance & Behavior ---
+    "buffer_font_size": 16.0,
+    "cursor_blink": true,
+    "current_line_highlight": "none",
+    "selection_highlight": false,
     "mouse_wheel_zoom": true,
+    "multi_cursor_modifier": "cmd_or_ctrl",
+    "show_whitespaces": "none",
+    "semantic_tokens": "off",
+    "linked_edits": true,
+    "auto_indent_on_paste": false,
+    "tab_size": 4,
+    "indent_guides": {
+        "enabled": false,
+    },
     "gutter": {
         "folds": false,
     },
@@ -54,53 +85,53 @@
             "vertical": false,
         },
     },
-    "cursor_blink": true,
+    "sticky_scroll": {
+        "enabled": false,
+    },
+
+    // --- Explorer ---
     "autosave": {
         "after_delay": {
             "milliseconds": 1000,
         },
     },
-    "buffer_font_family": "JetBrainsMono Nerd Font",
-    "auto_indent_on_paste": false,
-    "linked_edits": true,
-    "show_whitespaces": "none",
-    "show_edit_predictions": false,
-    "semantic_tokens": "off",
+    "format_on_save": "off",
     "ensure_final_newline_on_save": true,
-    "indent_guides": {
-        "enabled": false,
+    "restore_on_startup": "launchpad",
+
+    // --- Terminal ---
+    "terminal": {
+        "detect_venv": "off",
+        "font_family": "JetBrainsMono Nerd Font",
+        "shell": {
+            "with_arguments": {
+                "title_override": "Terminal",
+                "program": "pwsh.exe",
+                "args": ["--nologo"],
+            },
+        },
     },
-    "tab_size": 4,
+
+    // --- Git ---
+    "tabs": {
+        "git_status": false,
+    },
+
+    // --- Language Specific Settings ---
+    "languages": {
+        "Python": {
+            "format_on_save": "off",
+        },
+    },
+
+    // --- Miscellaneous ---
+    "auto_update": false,
+    "cli_default_open_behavior": "new_window",
+    "disable_ai": true,
+    "show_edit_predictions": false,
     "telemetry": {
         "diagnostics": false,
         "metrics": false,
     },
-    "icon_theme": {
-        "mode": "light",
-        "light": "Material Icon Theme",
-        "dark": "Material Icon Theme",
-    },
-    "ui_font_size": 17,
-    "buffer_font_size": 16.0,
-    "theme": {
-        "mode": "dark",
-        "light": "One Light",
-        "dark": "Catppuccin Mocha - No Italics",
-    },
-    "theme_overrides": {
-        "Catppuccin Mocha - No Italics": {
-            "border.focused": "#00000000",
-            "panel.focused_border": "#00000000",
-        },
-        "One Light": {
-            "border.focused": "#00000000",
-        },
-    },
-    "current_line_highlight": "none",
-    "selection_highlight": false,
-    "title_bar": {
-        "show_onboarding_banner": false,
-        "show_user_picture": false,
-        "show_sign_in": false,
-    },
+    "base_keymap": "VSCode",
 }

@@ -17,6 +17,9 @@
         "git_status": false,
         "auto_fold_dirs": false,
         "show_diagnostics": "off",
+        "indent_guides": {
+            "show": "never",
+        },
     },
     "outline_panel": {
         "git_status": false,

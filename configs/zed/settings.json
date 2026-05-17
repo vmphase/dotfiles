@@ -47,6 +47,7 @@
         "enabled": false,
     },
     "project_panel": {
+        "hide_root": true,
         "git_status": false,
         "auto_fold_dirs": false,
         "show_diagnostics": "off",

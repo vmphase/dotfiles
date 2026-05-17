@@ -1,7 +1,7 @@
 <h1 align="center"> dotfiles </h1>
 
 <div align="center">
-  <img src="assets/vscode.png" alt="VSCode" width="100%"/>
+  <img src="assets/zed.png" alt="Zed" width="100%"/>
 </div>
 
 <div align="center">
@@ -17,7 +17,7 @@
 - **Cursor**: [Bibata-Modern](https://github.com/ful1e5/Bibata_Cursor/releases/download/v2.0.7/Bibata-Modern-Classic-Windows.zip)
 - **Shell:** [PowerShell](https://learn.microsoft.com/en-us/powershell/) + [OhMyPosh](https://ohmyposh.dev/)
 - **App Launcher**: [Flow Launcher](https://www.flowlauncher.com/)
-- **Text Editor:** [VSCode](https://code.visualstudio.com/) / [Zed](https://zed.dev/)
+- **Text Editor:** [Zed](https://zed.dev/) / [VSCode](https://code.visualstudio.com/)
 - **Browser:** [Firefox](https://www.firefox.com/en/) / [Chromium](https://www.chromium.org/getting-involved/download-chromium/)
 
 ---

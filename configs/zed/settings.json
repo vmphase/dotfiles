@@ -5,7 +5,7 @@
     "ui_font_size": 17,
     "theme_overrides": {
         "Catppuccin Mocha - No Italics": {
-            "border": "#00000000",
+            // "border": "#00000000",
             "border.variant": "#00000000",
             "title_bar.background": "#1e1e2e",
             "toolbar.background": "#1e1e2e",

@@ -1,5 +1,11 @@
 {
     // --- UI ---
+    "collaboration_panel": {
+        "dock": "left"
+    },
+    "git_panel": {
+        "dock": "right"
+    },
     "window_decorations": "client",
     "buffer_font_family": "JetBrainsMono Nerd Font",
     "ui_font_size": 17,
@@ -47,6 +53,7 @@
         "enabled": false,
     },
     "project_panel": {
+        "dock": "left",
         "hide_root": true,
         "git_status": false,
         "auto_fold_dirs": false,

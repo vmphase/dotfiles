@@ -54,6 +54,7 @@
         "indent_guides": {
             "show": "never",
         },
+        "auto_reveal_entries": false
     },
     "outline_panel": {
         "git_status": false,

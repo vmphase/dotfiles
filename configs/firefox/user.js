@@ -1,4 +1,3 @@
-
 // Home Page and New Window
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
 user_pref("browser.startup.page", 0);
@@ -14,3 +13,18 @@ user_pref("browser.newtab.url", "about:blank");
 user_pref("browser.newtabpage.activity-stream.showSponsored", false);
 user_pref("browser.newtabpage.activity-stream.showSponsoredTopSites", false);
 user_pref("browser.newtabpage.activity-stream.default.sites", "");
+
+// Limit multi-process and enable auto-unload
+user_pref("dom.ipc.processCount", 4);
+user_pref("dom.ipc.processCount.webIsolated", 1);
+user_pref("browser.tabs.unloadOnLowMemory", true);
+
+// Disable link pre-fetching / predicting what you'll click
+user_pref("network.predictor.enabled", false);
+user_pref("network.prefetch-next", false);
+user_pref("network.dns.disablePrefetch", true);
+
+// Disable background telemetry and crash reporting
+user_pref("datareporting.healthreport.uploadEnabled", false);
+user_pref("datareporting.policy.dataSubmissionEnabled", false);
+user_pref("toolkit.telemetry.enabled", false);

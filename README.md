@@ -88,9 +88,7 @@
 | Extension     | Description             |
 | ------------- | ----------------------- |
 | uBlock Origin | Block Ads & Tracking    |
-| RYS           | Customize YouTube       |
 | Dark Reader   | Force-dark theme        |
-| TWP           | Translate selected text |
 
 ---
 

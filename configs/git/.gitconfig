@@ -1,0 +1,29 @@
+[user]
+    name = vmphase
+    email = vmphase.dev@gmail.com
+
+[core]
+    autocrlf = True
+    editor = nano
+    longpaths = true
+
+[diff]
+    algorithm = histogram
+
+[push]
+    autoSetupRemote = true
+
+[fetch]
+    prune = True
+
+[color]
+    ui = auto
+
+[log]
+    date = iso
+
+[alias]
+    undo-commit = reset --soft HEAD~1
+    visual-log = log --oneline --graph --decorate --all
+    commit-empty = commit --allow-empty -m "empty commit"
+    aliases = config --get-regexp ^alias\\.

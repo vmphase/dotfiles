@@ -37,17 +37,19 @@
 
 #### User Interface
 
-| Shortcut                                          | Action                |
-| ------------------------------------------------- | --------------------- |
-| <kbd>Ctrl</kbd> + <kbd>B</kbd>                    | Toggle left sidebar   |
-| <kbd>Ctrl</kbd> + <kbd>E</kbd>                    | Toggle file explorer  |
-| <kbd>Ctrl</kbd> + <kbd>G</kbd>                    | Toggle git panel      |
-| <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>B</kbd>   | Toggle outline panel  |
-| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>M</kbd> | Toggle problems panel |
-| <kbd>Ctrl</kbd> + <kbd>W</kbd>                    | Close active tab      |
-| <kbd>Ctrl</kbd> + <kbd>`</kbd>                    | Toggle terminal       |
-| <kbd>Ctrl</kbd> + <kbd>P</kbd>                    | Go to file            |
-| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> | Command palette       |
+| Shortcut                                          | Action                          |
+| ------------------------------------------------- | ------------------------------- |
+| <kbd>Ctrl</kbd> + <kbd>B</kbd>                    | Toggle left sidebar             |
+| <kbd>Ctrl</kbd> + <kbd>E</kbd>                    | Toggle file explorer            |
+| <kbd>Ctrl</kbd> + <kbd>G</kbd>                    | Toggle git panel                |
+| <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>B</kbd>   | Toggle outline panel            |
+| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>M</kbd> | Toggle problems panel           |
+| <kbd>Shift</kbd> + <kbd>Esc</kbd>                 | Toggle active window fullscreen |
+| <kbd>Ctrl</kbd> + <kbd>R</kbd>                    | Open recent project tab         |
+| <kbd>Ctrl</kbd> + <kbd>W</kbd>                    | Close active tab                |
+| <kbd>Ctrl</kbd> + <kbd>`</kbd>                    | Toggle terminal                 |
+| <kbd>Ctrl</kbd> + <kbd>P</kbd>                    | Go to file                      |
+| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> | Command palette                 |
 
 #### Navigation
 

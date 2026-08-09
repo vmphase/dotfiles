@@ -1,18 +1,18 @@
-/* ---------- Hide by link target ---------- */
+/* Hide by link target */
 a[href="/quest-home"],
 a[href="/store"],
 a[href="/shop"] {
     display: none !important;
 }
 
-/* ---------- Hide by data-list-item-id ---------- */
+/* Hide by data-list-item-id */
 a[data-list-item-id*="nitro"],
 a[data-list-item-id*="shop"],
 a[data-list-item-id*="quests"] {
     display: none !important;
 }
 
-/* ---------- Remove parent <li> (no empty space) ---------- */
+/* Remove parent <li> (no empty space) */
 li:has(a[href="/quest-home"]),
 li:has(a[href="/store"]),
 li:has(a[href="/shop"]),
@@ -22,7 +22,7 @@ li:has(a[data-list-item-id*="quests"]) {
     display: none !important;
 }
 
-/* ---------- Remove wrapper containers ---------- */
+/* Remove wrapper containers */
 div:has(> li:has(a[href="/quest-home"])),
 div:has(> li:has(a[href="/store"])),
 div:has(> li:has(a[href="/shop"])) {
@@ -81,5 +81,13 @@ div[aria-label="Discover"][role="treeitem"] {
 
 /* Remove its list wrapper to prevent spacing */
 .listItemWrapper__91816:has(div[aria-label="Discover"]) {
+    display: none !important;
+}
+
+/* Hide only activity cards */
+div[data-list-item-id^="members-"]:has(.contentImage__42bf5) {
+    display: none !important;
+}
+h3:has(div[aria-label="Member List Recent Activity Settings"]) {
     display: none !important;
 }

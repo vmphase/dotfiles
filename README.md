@@ -17,7 +17,7 @@
 - **Cursor**: [Bibata-Modern](https://github.com/ful1e5/Bibata_Cursor/releases/download/v2.0.7/Bibata-Modern-Classic-Windows.zip)
 - **Shell:** [Nushell](https://www.nushell.sh/)
 - **Text Editor:** [Zed](https://zed.dev/)
-- **Browser:** [Firefox](https://www.firefox.com/en/) / [Chromium](https://www.chromium.org/getting-involved/download-chromium/)
+- **Browser:** [Firefox](https://www.firefox.com/en/) / [Chrome](https://www.chromium.org/getting-involved/download-chromium/)
 
 ---
 

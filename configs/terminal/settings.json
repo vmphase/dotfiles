@@ -5,7 +5,7 @@
     "centerOnLaunch": true,
     "copyFormatting": "none",
     "copyOnSelect": false,
-    "defaultProfile": "{YOUR_GUID}",,
+    "defaultProfile": "{YOUR_GUID}",
     "disabledProfileSources": [
         "Windows.Terminal.VisualStudio",
         "Windows.Terminal.Azure"
@@ -61,7 +61,7 @@
             {
                 "commandline": "nu.exe",
                 "cursorShape": "bar",
-                "guid": "{YOUR_GUID}",,
+                "guid": "{YOUR_GUID}",
                 "hidden": false,
                 "icon": "none",
                 "name": "Terminal",

@@ -5,6 +5,9 @@ user_pref("browser.startup.homepage", "about:blank");
 user_pref("browser.newtabpage.activity-stream.feeds.topsites", false);
 user_pref("browser.tabs.inTitlebar", 1);
 
+// Disable Firefox Accounts and Sync
+user_pref("identity.fxaccounts.enabled", false);
+
 // Ensure new tabs are also blank
 user_pref("browser.newtabpage.enabled", false);
 user_pref("browser.newtab.url", "about:blank");

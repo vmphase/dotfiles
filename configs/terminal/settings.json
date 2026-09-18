@@ -29,7 +29,7 @@
     "profiles": {
         "defaults": {
             "colorScheme": "Catppuccin Mocha",
-            "cursorShape": "bar",
+            "cursorShape": "filledBox",
             "elevate": false,
             "font": {
                 "face": "JetBrainsMono Nerd Font"

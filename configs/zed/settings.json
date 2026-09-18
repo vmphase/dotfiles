@@ -64,7 +64,11 @@
 
     // --- Editor ---
     "tab_size": 4,
-    "cursor_blink": true,
+    "cursor_shape": "block",
+    "cursor_blink": false,
+    "cursor_animation": {
+        "enabled": true,
+    },
     "current_line_highlight": "none",
     "selection_highlight": false,
     "mouse_wheel_zoom": true,

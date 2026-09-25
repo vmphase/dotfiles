@@ -4,10 +4,6 @@
         "bindings": {
             "ctrl-e": "project_panel::ToggleFocus",
             "ctrl-g": "git_panel::ToggleFocus",
-            "ctrl-shift-c": [
-                "task::Spawn",
-                { "task_name": "Open Windows Terminal Here" },
-            ],
         },
         "unbind": {
             "ctrl-e": "file_finder::Toggle",

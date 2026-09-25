@@ -120,9 +120,7 @@
 <summary><strong>Terminal</strong></summary><br>
 
 - [Nushell](https://www.nushell.sh/)
-- [JetBrains Mono Font](https://www.jetbrains.com/lp/mono/)
 - [Scoop Manager](https://scoop.sh/)
-- [CoreUtils](https://gnuwin32.sourceforge.net/packages/coreutils.htm)
 
 ### Windows Terminal
 
@@ -131,8 +129,12 @@
 ### Utilities
 
 ```sh
-# enhanced ls cat grep find
-scoop install eza bat ripgrep fd
+# coreutils, enhanced ls cat grep find
+scoop install uutils-coreutils eza bat ripgrep fd
+
+# JetBrainsMono Nerd Font
+scoop bucket add nerd-fonts
+scoop install JetBrainsMono-NF
 
 # optional
 scoop install ffmpeg nano fzf gh 7zip

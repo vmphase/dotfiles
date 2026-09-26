@@ -1,6 +1,7 @@
 # environment configuration
 $env.config.show_banner = false
-$env.PROMPT_COMMAND_RIGHT = ""
+$env.PROMPT_COMMAND_RIGHT = "" 
+$env.config.history.path = null
 
 # find -> fd
 def --wrapped find [...args] {
@@ -41,6 +42,6 @@ def --env dotenv [] {
     load-env $resolved
 }
 
-# Aliases
+# aliases
 alias cat = bat --style=plain
 alias grep = rg

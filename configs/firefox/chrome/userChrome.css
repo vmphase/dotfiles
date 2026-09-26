@@ -38,7 +38,6 @@
 
 .tabbrowser-tab {
     border-radius: 8px !important;
-    height: 50px !important;
     margin-top: 6px !important;
     margin-left: 2px !important;
     margin-bottom: 4px !important;
@@ -269,7 +268,6 @@ menu > menupopup {
     color: #98c1d9 !important;
 }
 
-#titlebar,
 #picture-in-picture-button,
 #star-button-box,
 #translations-button,
@@ -279,6 +277,23 @@ menu > menupopup {
 #searchmode-switcher-icon,
 #install-webapp-button {
     display: none !important;
+}
+
+.titlebar-buttonbox {
+    background-color: var(--custom-bg) !important;
+    background-image: none !important;
+}
+
+.titlebar-button {
+    background-color: var(--custom-bg) !important;
+}
+
+.titlebar-button:hover {
+    background-color: var(--custom-tab-selected-bg) !important;
+}
+
+.titlebar-close:hover {
+    background-color: #f7768e !important;
 }
 
 #TabsToolbar {

@@ -1,4 +1,23 @@
 {
+    // -- Extensions --
+    "auto_install_extensions": {
+        "catppuccin": true,
+        "dockerfile": true,
+        "editorconfig": true,
+        "emmet": true,
+        "git-firefly": true,
+        "html": true,
+        "log": true,
+        "make": true,
+        "material-icon-theme": true,
+        "nu": true,
+        "rst": true,
+        "sql": true,
+        "toml": true,
+        "xml": true,
+    },
+
+    // -- UI and Themes --
     "theme": {
         "mode": "dark",
         "light": "One Light",
@@ -23,8 +42,11 @@
             "panel.focused_border": "#00000000",
         },
     },
+    "ui_font_size": 17,
+    "buffer_font_family": "JetBrainsMono Nerd Font",
+    "buffer_font_size": 13,
 
-    // --- Window / Chrome ---
+    // --- Chrome and Navigation ---
     "window_decorations": "client",
     "title_bar": {
         "show_onboarding_banner": false,
@@ -57,11 +79,6 @@
     },
     "outline_panel": { "git_status": false },
 
-    // --- Fonts ---
-    "ui_font_size": 17,
-    "buffer_font_family": "JetBrainsMono Nerd Font",
-    "buffer_font_size": 13,
-
     // --- Editor ---
     "tab_size": 4,
     "cursor_shape": "block",
@@ -84,11 +101,13 @@
     "scrollbar": { "axes": { "horizontal": false, "vertical": false } },
     "sticky_scroll": { "enabled": false },
 
-    // --- Save / Startup ---
+    // --- Lifecycle ---
+    "auto_update": false,
     "autosave": { "after_delay": { "milliseconds": 1000 } },
     "format_on_save": "off",
     "ensure_final_newline_on_save": true,
     "restore_on_startup": "launchpad",
+    "cli_default_open_behavior": "new_window",
 
     // --- Terminal ---
     "terminal": {
@@ -111,7 +130,5 @@
     // --- Misc / AI / Telemetry ---
     "disable_ai": true,
     "show_edit_predictions": false,
-    "auto_update": false,
-    "cli_default_open_behavior": "new_window",
     "telemetry": { "diagnostics": false, "metrics": false },
 }

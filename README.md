@@ -1,11 +1,11 @@
 <h1 align="center"> dotfiles </h1>
 
 <div align="center">
-  <img src="assets/zed.png" alt="Zed" width="100%"/>
+  <img src="assets/neovim.png" alt="neovim" width="100%">
 </div>
 
 <div align="center">
-  <img src="assets/terminal.png" alt="terminal" width="49%"/>
+  <img src="assets/zed.png" alt="zed" width="49%"/>
   <img src="assets/firefox.png" alt="firefox" width="49%"/>
 </div>
 
@@ -13,87 +13,69 @@
 
 ## Core Info
 
-- **OS:** [Windows 11 25H2](https://www.microsoft.com/en-us/software-download/windows11)
+- **OS:** [Windows 11 26H2](https://www.microsoft.com/en-us/software-download/windows11)
 - **Cursor**: [Bibata-Modern](https://github.com/ful1e5/Bibata_Cursor/releases/download/v2.0.7/Bibata-Modern-Classic-Windows.zip)
-- **Shell:** [Nushell](https://www.nushell.sh/)
-- **Text Editor:** [Zed](https://zed.dev/)
-- **Browser:** [Firefox](https://www.firefox.com/en/) / [Chrome](https://www.chromium.org/getting-involved/download-chromium/)
+- **Terminal / Shell:** [Windows Terminal](https://github.com/microsoft/terminal) / [Nushell](https://www.nushell.sh/)
+- **Package Manager:** [Scoop](https://scoop.sh/)
+- **Text Editor:** [Neovim](https://neovim.io/) / [Zed](https://zed.dev/)
+- **Browser:** [Firefox](https://www.firefox.com/en/) / [Chrome](https://www.google.com/chrome/)
 
 ---
 
 ## Setup
 
 > [!NOTE]
-> These dotfiles are **modular, not automatic**.  
-> Created for personal use only.
+> These dotfiles are **modular, not automatic**.
+> Created mainly for personal use, thus may not fit everyone.
+
+## Utilities
+ 
+```bash
+# core
+scoop install git nu neovim
+scoop install uutils-coreutils eza bat ripgrep fd
+
+# JetBrainsMono Nerd Font
+scoop bucket add nerd-fonts
+scoop install JetBrainsMono-NF
+
+# search, github, archives, media, editor
+scoop install fzf gh tuicr 7zip ffmpeg nano
+
+# toolchains (neovim treesitter, lsp, go/python projects)
+scoop install gcc tree-sitter nodejs go python
+```
 
 <details>
-<summary><strong>Zed</strong></summary><br>
 
-- [`configs/zed/settings.json`](configs/zed/settings.json)
-- [`configs/zed/keymap.json`](configs/zed/keymap.json)
+<summary><strong>Neovim</strong></summary><br>
 
-### Keybinds
+Based on [LazyVim](https://www.lazyvim.org/). Copy the folder in `%LOCALAPPDATA%\nvim` (`~/.config/nvim`), replacing the existing one, then run `nvim`. On first launch, lazy.nvim installs the plugins automatically.
 
-#### User Interface
-
-| Shortcut                                          | Action                          |
-| ------------------------------------------------- | ------------------------------- |
-| <kbd>Ctrl</kbd> + <kbd>B</kbd>                    | Toggle left sidebar             |
-| <kbd>Ctrl</kbd> + <kbd>E</kbd>                    | Toggle file explorer            |
-| <kbd>Ctrl</kbd> + <kbd>G</kbd>                    | Toggle git panel                |
-| <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>B</kbd>   | Toggle outline panel            |
-| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>M</kbd> | Toggle problems panel           |
-| <kbd>Shift</kbd> + <kbd>Esc</kbd>                 | Toggle active window fullscreen |
-| <kbd>Ctrl</kbd> + <kbd>R</kbd>                    | Open recent project tab         |
-| <kbd>Ctrl</kbd> + <kbd>W</kbd>                    | Close active tab                |
-| <kbd>Ctrl</kbd> + <kbd>`</kbd>                    | Toggle terminal                 |
-| <kbd>Ctrl</kbd> + <kbd>P</kbd>                    | Go to file                      |
-| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> | Command palette                 |
-
-#### Navigation
-
-| Shortcut                                           | Action                        |
-| -------------------------------------------------- | ----------------------------- |
-| <kbd>F12</kbd> / <kbd>Alt</kbd> + <kbd>Click</kbd> | Go to definition              |
-| <kbd>Alt</kbd> + <kbd>F12</kbd>                    | Peek definition               |
-| <kbd>Ctrl</kbd> + <kbd>F</kbd>                     | Find in current file          |
-| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd>  | Find in project               |
-| <kbd>Ctrl</kbd> + <kbd>H</kbd>                     | Find & replace (local)        |
-| <kbd>Ctrl</kbd> + <kbd>T</kbd>                     | Search symbols (project)      |
-| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>O</kbd>  | Search symbols (current file) |
-| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>G</kbd>  | Go to line                    |
-
-#### Editing
-
-| Shortcut                                                                       | Action                            |
-| ------------------------------------------------------------------------------ | --------------------------------- |
-| <kbd>Ctrl</kbd> + <kbd>D</kbd>                                                 | Select next match                 |
-| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>L</kbd>                              | Select all occurrences            |
-| <kbd>Shift</kbd> + <kbd>↑</kbd>/<kbd>↓</kbd>/<kbd>←</kbd>/<kbd>→</kbd>         | Select text                       |
-| <kbd>Ctrl</kbd> + <kbd>Click</kbd>                                             | Add multi-cursor                  |
-| <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>F</kbd>                               | Format document                   |
-| <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>↑</kbd> / <kbd>↓</kbd>                | Duplicate line up / down          |
-| <kbd>Alt</kbd> + <kbd>↑</kbd> / <kbd>↓</kbd>                                   | Swap / move line up / down        |
-| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>K</kbd>                              | Delete entire line                |
-| <kbd>Ctrl</kbd> + <kbd>Enter</kbd>                                             | Insert line below                 |
-| <kbd>Ctrl</kbd> + <kbd>/</kbd> / <kbd>Ctrl</kbd> + <kbd>K</kbd> + <kbd>C</kbd> | Toggle comment / un-comment       |
-| <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>A</kbd>                               | Toggle block comment              |
-| <kbd>Ctrl</kbd> + <kbd>←</kbd> / <kbd>→</kbd>                                  | Move cursor word-by-word          |
-| <kbd>Ctrl</kbd> + <kbd>Backspace</kbd> / <kbd>Ctrl</kbd> + <kbd>Delete</kbd>   | Delete previous / next whole word |
-| <kbd>Ctrl</kbd> + <kbd>Space</kbd>                                             | Trigger suggestion                |
-| <kbd>Ctrl</kbd> + <kbd>.</kbd>                                                 | Trigger code action (quick fix)   |
+- [`.config/nvim`](.config/nvim)
 
 </details>
 
 <details>
+
+<summary><strong>Zed</strong></summary><br>
+
+Copy both files into Zed's config folder, replacing the existing ones to `%APPDATA%\Zed` (`~/.config/zed`).
+
+- [`.config/zed/settings.json`](.config/zed/settings.json)
+- [`.config/zed/keymap.json`](.config/zed/keymap.json)
+
+</details>
+
+<details>
+
 <summary><strong>Firefox</strong></summary><br>
 
 1. Navigate to your default profile folder: `about:profiles`.
 2. Apply the configuration: either replace existing files or drop in the new ones.
 
-- [`config/firefox/chrome`](configs/firefox/chrome)
-- [`configs/firefox/user.js`](configs/firefox/user.js)
+- [`.config/firefox/chrome`](.config/firefox/chrome)
+- [`.config/firefox/user.js`](.config/firefox/user.js)
 
 ---
 
@@ -101,72 +83,36 @@
 
 | Extension     | Description          |
 | ------------- | -------------------- |
-| uBlock Origin | Block Ads & Tracking |
+| uBlock Origin | Block Ads & tracking |
 | Dark Reader   | Force-dark theme     |
-
----
-
-### Overview
-
-- Blank page (`about:blank`) for both homepage and new tabs.
-- Disable sponsored content, top sites, etc.
-- Rounded, compact tabs with custom (dark) color-styling.
-- Hidden unnecessary icons: tab sound, new tab icon, picture-in-picture, star, tracking, translations.
-- Centered URL bar with custom font ([JetBrainsMono](https://www.jetbrains.com/lp/mono/)) & removed borders, separators.
 
 </details>
 
 <details>
-<summary><strong>Terminal</strong></summary><br>
 
-- [Nushell](https://www.nushell.sh/)
-- [Scoop Manager](https://scoop.sh/)
+<summary><strong>Terminal</strong></summary><br>
 
 ### Windows Terminal
 
-- [`config/terminal/settings.json`](configs/terminal/settings.json)
+Update the default windows terminal settings:
 
-### Utilities
-
-```sh
-# coreutils, enhanced ls cat grep find
-scoop install uutils-coreutils eza bat ripgrep fd
-
-# JetBrainsMono Nerd Font
-scoop bucket add nerd-fonts
-scoop install JetBrainsMono-NF
-
-# optional
-scoop install ffmpeg nano fzf gh 7zip
+```bash
+cp .config/terminal/wt.settings.json /path/to/wt-settings
 ```
 
-Edit nushell config using `notepad $nu.config-path`:
+- [`.config/terminal/wt.settings.json`](.config/terminal/wt.settings.json)
 
-```nu
-# environment configuration
-$env.config.show_banner = false
-$env.PROMPT_COMMAND_RIGHT = ""
+### Nushell
 
-# find -> fd
-def --wrapped find [...args] {
-    if ($in | is-not-empty) {
-        builtin find ...$args
-    } else {
-        fd ...$args
-    }
-}
+Update the default nushell config:
 
-# ls -> eza
-def --wrapped ls [...args] {
-    eza ...$args
-}
-
-# aliases
-alias cat = bat --style=plain
-alias grep = rg
+```bash
+cp .config/terminal/nushell.config.nu $nu.config-path
 ```
 
-- [`config/terminal/config.nu`](configs/terminal/config.nu)
+- [`.config/terminal/nushell.config.nu`](.config/terminal/nushell.config.nu)
+
+</details>
 
 <br>
 
@@ -175,5 +121,5 @@ alias grep = rg
 </p>
 
 <p align="center">
-        <i><code>&copy 2026 <a href="https://github.com/vmphase">vmphase</a></code></i>
+        <i><code>&copy; 2026 <a href="https://github.com/vmphase">vmphase</a></code></i>
 </p>

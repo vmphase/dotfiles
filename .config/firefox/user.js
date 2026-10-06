@@ -5,6 +5,13 @@ user_pref("browser.startup.homepage", "about:blank");
 user_pref("browser.newtabpage.activity-stream.feeds.topsites", false);
 user_pref("browser.tabs.inTitlebar", 1);
 
+// Disable annoying UI (new 157 update, tab-groups, etc.)
+user_pref("identity.fxaccounts.enabled", false);
+user_pref("browser.nova.enabled", false);
+user_pref("browser.urlbar.trustPanel.featureGate", false);
+user_pref("browser.taskbarTabs.enabled", false);
+user_pref("browser.tabs.groups.enabled", false);
+
 // Disable Firefox Accounts and Sync
 user_pref("identity.fxaccounts.enabled", false);
 

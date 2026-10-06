@@ -4,18 +4,18 @@
     signingkey = ~/.ssh/id_ed25519_gh_signing.pub
 
 [core]
-    autocrlf = True
-    editor = nano
+    autocrlf = input
+    editor = nvim
     longpaths = true
 
 [gpg]
-	format = ssh
+    format = ssh
 
 [gpg "ssh"]
-	allowedSignersFile = ~/.ssh/allowed_signers
+    allowedSignersFile = ~/.ssh/allowed_signers
 
 [commit]
-	gpgsign = true
+    gpgsign = true
 
 [diff]
     algorithm = histogram
@@ -37,3 +37,4 @@
     visual-log = log --oneline --graph --decorate --all
     commit-empty = commit --allow-empty -m "empty commit"
     aliases = config --get-regexp ^alias\\.
+    
